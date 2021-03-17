@@ -1,0 +1,56 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    padding: 10px;
+    grid-gap:40px;
+    }
+    .grid > div{
+    text-align: center;
+    padding:10px;
+    border-radius: 10px;
+    }
+
+    .forinsta{
+      background-color: #fb3958;
+    }
+
+    .foryoutube{
+      background-color: red;
+    }
+
+    .fortwitter{
+      background-color: lightblue;
+    }
+
+    .forfacebook{
+      background-color: darkblue;
+    }
+
+    h1{
+    text-align:center;
+    font-family: verdana;
+    }
+
+    p{
+      font-family: verdana;
+      text-align: center;
+    }
+    @media(min-width: 2000px){
+        .grid{
+            display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             
+            }
+    }
+    @media(max-width: 1000px){
+        .grid{
+            display: flex;
+             justify-content:center;
+              flex-wrap: wrap;
+             flex-direction: row;
+               
+            }
+    }
+
+   
